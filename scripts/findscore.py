@@ -19,7 +19,7 @@ fillondf.join(newdf).sort_values('FILLON', ascending=0).to_csv('../parite-lr.csv
 
 newdf = makenewdf('HAMON')
 hamondf = df.from_csv('data/investitures-socialistes.csv')
-hamondf = hamondf.drop(['dpt', 'circo'], axis=1).set_index('code_circo')
+# hamondf = hamondf.drop(['dpt', 'circo'], axis=1).set_index('code_circo')
 hamondf.join(newdf).sort_values('HAMON', ascending=0).to_csv('../parite-ps.csv')
 
 newdf = makenewdf('MÉLENCHON')

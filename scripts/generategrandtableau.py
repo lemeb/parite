@@ -47,5 +47,5 @@ for i in range(len(listes_genre_et_counter)):
 
 import pandas as pd
 t = pd.concat(partis_dfs, axis=1)
-t['Classement des circonscriptions'] = range(1, len(l) + 1)
+t['Classement des circonscriptions'] = range(1, len(t) + 1)
 t.set_index('Classement des circonscriptions').to_csv('../gt.csv')
